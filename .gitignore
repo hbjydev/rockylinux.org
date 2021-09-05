@@ -48,8 +48,6 @@ typings/
 # Optional REPL history
 .node_repl_history
 
-package-lock.json
-
 # Output of 'npm pack'
 *.tgz
 
@@ -174,7 +172,5 @@ fabric.properties
 .idea/codestream.xml
 
 .idea/codeStyles/Project.xml
-
-package-lock.json
 
 .idea/inspectionProfiles/Project_Default.xml
