@@ -21,7 +21,6 @@ const Partners = ({ data, pageContext: { locale: language } }) => {
   return (
     <Layout>
       <SEO title={translate('title')} />
-      <Header pageContext="{locale: language}" />
       <main className="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white z-0">
         <div className="max-w-4xl mx-auto py-8 px-4 sm:py-10 sm:px-6 lg:px-8">
           <div className="px-4 pb-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">

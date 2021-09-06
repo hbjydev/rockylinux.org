@@ -21,10 +21,6 @@ const Index = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title="Press" />
-      <Header
-        metadata={data.site.siteMetadata}
-        pageContext="{pageContext.language}"
-      />
       <PressLinks posts={posts} />
       <Pagination
         totalCount={totalCount}

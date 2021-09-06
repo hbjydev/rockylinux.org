@@ -6,6 +6,20 @@
   fill: black;
 }
 
+#hero_img {
+  height: 360px;
+}
+@media (max-width: 1100px) {
+  #hero_img {
+    width: 100%;
+    height: auto;
+  }
+  #rl_hero .right {
+    margin-left: 0;
+    margin-top: 48px;
+  }
+}
+
 body {
   min-height: 100vh;
   display: flex;

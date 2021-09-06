@@ -19,10 +19,6 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <SEO title="Other" />
-      <Header
-        metadata={data.site.siteMetadata}
-        pageContext="{pageContext.language}"
-      />
       {!noPages && <GenericPages posts={posts} />}
       <Footer pageContext="{pageContext.language}" />
     </Layout>

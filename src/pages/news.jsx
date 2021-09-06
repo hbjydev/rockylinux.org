@@ -22,10 +22,6 @@ const Index = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title="News" />
-      <Header
-        metadata={data.site.siteMetadata}
-        pageContext="{pageContext.language}"
-      />
       {!noBlog && <BlogPosts posts={posts} />}
       <Pagination
         totalCount={totalCount}
