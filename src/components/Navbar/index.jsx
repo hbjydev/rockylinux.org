@@ -173,12 +173,15 @@ const RLNavbar = () => {
     }
   ];
 
-  const rockyLinks = [
-    { label: translate('links.overview'), href: '/', active: window.location.pathname == '/' },
-    { label: translate('links.posts'), href: '/news/1/', active: window.location.pathname.startsWith('/news') },
-    { label: translate('links.wiki'), href: 'https://wiki.rockylinux.org' },
-    { label: translate('links.documentation'), href: 'https://docs.rockylinux.org' },
-  ];
+  let rockyLinks = [];
+  if (typeof window !== 'undefined') {
+    rockyLinks = [
+      { label: translate('links.overview'), href: '/', active: window.location.pathname == '/' },
+      { label: translate('links.posts'), href: '/news/1/', active: window.location.pathname.startsWith('/news') },
+      { label: translate('links.wiki'), href: 'https://wiki.rockylinux.org' },
+      { label: translate('links.documentation'), href: 'https://docs.rockylinux.org' },
+    ];
+  }
 
   const rockyRightLinks = [
     { label: 'Community', onClick: () => {} }
