@@ -1,11 +1,8 @@
-import { Link } from 'gatsby';
-import { Translate, Trans } from '../i18n/utils/translate';
-
 import React from 'react';
-import Footer from '../components/footer';
-import Header from '../components/header';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import PageHeader from '../components/page-header';
+import { Translate, Trans } from '../i18n/utils/translate';
 
 const DownloadPage = ({ pageContext }) => {
   const translate = Translate('download');
@@ -14,14 +11,7 @@ const DownloadPage = ({ pageContext }) => {
     <Layout>
       <SEO title={translate('title')} />
       <main className="bg-white dark:bg-gray-900 text-gray-800 dark:text-white z-0">
-        <div className="mt-16 px-6 mb-10" style={{ borderBottom: '1px solid #e1e1e1' }}>
-          <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center', paddingBottom: '24px' }}>
-            <h2 style={{ marginBottom: '12px' }}>{translate('title')}</h2>
-            <p className="text-base text-gray-700 dark:text-gray-300 md:text-lg sm:px-4">
-              {translate('description')}
-            </p>
-          </div>
-        </div>
+        <PageHeader title={translate('title')} description={translate('description')} />
         <div className="px-4 pb-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="overflow-x-auto overflow-y-hidden border max-w-screen-md mx-auto" style={{ borderColor: '#e1e1e1' }}>
             <table className="min-w-full divide-y" style={{ borderColor: '#e1e1e1' }}>
