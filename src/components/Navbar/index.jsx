@@ -34,130 +34,6 @@ const rockyLogo = (
 
 const RLNavbar = () => {
   const translate = Translate();
-  const resfLeftLinks = [
-    {
-      label: 'Projects',
-      dropdown: {
-        sections: [
-          {
-            title: 'Serve',
-            items: [
-              {
-                label: 'Rocky Linux',
-                href: 'https://rockylinux.org'
-              }
-            ]
-          },
-          {
-            title: 'Provision',
-            items: [
-              {
-                label: 'Warewulf',
-                href: 'https://warewulf.github.io'
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      label: 'Community',
-      dropdown: {
-        sections: [
-          {
-            title: 'Connect',
-            items: [
-              {
-                label: 'Forums',
-                href: 'https://forums.rockylinux.org'
-              },
-              {
-                label: 'Mattermost',
-                href: 'https://chat.rockylinux.org'
-              },
-              {
-                label: 'Reddit',
-                href: 'https://reddit.com/r/rockylinux'
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      label: 'Partners',
-      dropdown: {
-        sections: [
-          {
-            items: [
-              {
-                label: 'Partners',
-                href: '/partners'
-              },
-              {
-                label: 'Sponsors',
-                href: '/sponsors'
-              }
-            ]
-          }
-        ]
-      }
-    }
-  ];
-
-  const rightLinks = [
-    {
-      label: 'Resources',
-      dropdown: {
-        sections: [
-          {
-            title: 'Resources',
-            items: [
-              {
-                label: 'Blog',
-                href: '#'
-              },
-              {
-                label: 'Forum',
-                href: 'https://forums.rockylinux.org'
-              }
-            ]
-          },
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Rocky Linux',
-                href: 'https://docs.rockylinux.org'
-              }
-            ]
-          },
-          {
-            title: 'Governance',
-            items: [
-              {
-                label: 'Community Charter',
-                href: '/community-charter'
-              },
-              {
-                label: 'Organizational Structure',
-                href: '/organizational-structure'
-              }
-            ]
-          }
-        ]
-      }
-    },
-  ];
-
-  const resfCtas = [
-    {
-      preIcon: (<ChatAlt2Icon />),
-      children: translate('links.join-the-discussion'),
-      link: 'https://chat.rockylinux.org'
-    }
-  ];
-
   const rockyCtas = [
     {
       children: (<CodeIcon />),
@@ -189,8 +65,7 @@ const RLNavbar = () => {
 
   return (
     <>
-      <Navbar logo={resfLogo} leftLinks={resfLeftLinks} rightLinks={rightLinks} ctas={resfCtas} />
-      <SubNavbar logo={rockyLogo} links={rockyLinks} rightLinks={rockyRightLinks} ctas={rockyCtas} />
+      <Navbar centered logo={rockyLogo} links={rockyLinks} rightLinks={rockyRightLinks} ctas={rockyCtas} />
     </>
   );
 }

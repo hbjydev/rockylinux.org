@@ -8,7 +8,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
   const { config } = useLocalization();
 
   return (
-    <footer className="bg-gray-50 dark:bg-gray-900">
+    <footer className="bg-gray-900">
       <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
         <nav
           className="-mx-5 -my-2 flex flex-wrap justify-center"
@@ -18,7 +18,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           <div className="px-5 py-2">
             <a
               href="https://wiki.rockylinux.org/contributing"
-              className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-500 dark:hover:text-white"
+              className="text-base text-gray-400 hover:text-white"
             >
               {translate('links.get-involved')}
             </a>
@@ -26,7 +26,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           <div className="px-5 py-2">
             <LocalizedLink
               to="/sponsors/"
-              className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-500 dark:hover:text-white"
+              className="text-base text-gray-400 hover:text-white"
             >
               {translate('links.sponsors')}
             </LocalizedLink>
@@ -34,7 +34,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           <div className="px-5 py-2">
             <a
               href="https://status.rockylinux.org/"
-              className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-500 dark:hover:text-white"
+              className="text-base text-gray-400 hover:text-white"
             >
               {translate('links.status')}
             </a>
@@ -42,7 +42,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           <div className="px-5 py-2">
             <a
               href="https://errata.rockylinux.org/"
-              className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-500 dark:hover:text-white"
+              className="text-base text-gray-400 hover:text-white"
             >
               {translate('links.errata')}
             </a>
@@ -50,7 +50,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           <div className="px-5 py-2">
             <LocalizedLink
               to="/partners/"
-              className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-500 dark:hover:text-white"
+              className="text-base text-gray-400 hover:text-white"
             >
               {translate('links.partners')}
             </LocalizedLink>
@@ -58,7 +58,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           <div className="px-5 py-2">
             <LocalizedLink
               to="/press/1/"
-              className="text-base text-gray-600 dark:text-gray-400 hover:text-gray-500 dark:hover:text-white"
+              className="text-base text-gray-400 hover:text-white"
             >
               {translate('links.press')}
             </LocalizedLink>
@@ -67,7 +67,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
         <div className="mt-8 flex justify-center space-x-6">
           <a
             href="https://twitter.com/rocky_linux"
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-500 dark:hover:text-white"
+            className="text-gray-400 hover:text-white"
           >
             <span className="sr-only">{translate('socials.twitter')}</span>
             <svg
@@ -81,7 +81,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           </a>
           <a
             href="https://reddit.com/r/rockylinux"
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-500 dark:hover:text-white"
+            className="text-gray-400 hover:text-white"
           >
             <span className="sr-only">{translate('socials.reddit')}</span>
             <svg
@@ -95,7 +95,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           </a>
           <a
             href="https://forums.rockylinux.org/"
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-500 dark:hover:text-white"
+            className="text-gray-400 hover:text-white"
           >
             <span className="sr-only">{translate('socials.forums')}</span>
             <svg
@@ -110,7 +110,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           </a>
           <a
             href="https://chat.rockylinux.org/"
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-500 dark:hover:text-white"
+            className="text-gray-400 hover:text-white"
           >
             <span className="sr-only">{translate('socials.mattermost')}</span>
             <svg
@@ -124,7 +124,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           </a>
           <a
             href="https://github.com/rocky-linux"
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-500 dark:hover:text-white"
+            className="text-gray-400 hover:text-white"
           >
             <span className="sr-only">{translate('socials.github')}</span>
             <svg
@@ -142,7 +142,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           </a>
           <Link
             to="/rss.xml"
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-500 dark:hover:text-white"
+            className="text-gray-400 hover:text-white"
           >
             <span className="sr-only">RSS</span>
             <svg
@@ -166,7 +166,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           aria-label="Language"
         >
           <div className="px-5 py-2 flex" id="LanguageDiv" name="LanguageDiv">
-            <h5 className="font-medium text-sm text-gray-600 dark:text-gray-400 ml-2 mr-2 mt-2 flex">
+            <h5 className="font-medium text-sm text-gray-400 ml-2 mr-2 mt-2 flex">
               <svg
                 id="languageIcon"
                 name="languageIcon"
@@ -193,7 +193,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
                 }`;
               }}
               name="language"
-              className="mt-1 mr-2 block w-full pl-2 pr-8 py-1 text-sm text-black dark:text-white border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md"
+              className="mt-1 mr-2 block w-full pl-2 pr-8 py-1 text-sm text-white border-gray-600 bg-gray-700 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md"
               aria-label="Language Select"
             >
               <option value="" selected hidden disabled>

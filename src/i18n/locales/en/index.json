@@ -20,11 +20,12 @@
       "heading": "What is the Rocky Linux project?"
     },
     "hero": {
-      "headline": "A community-driven effort to give you enterprise-grade, production-ready Linux."
+      "headline": "Enterprise Linux, the community way.",
+      "subheader": "Rocky Linux is a free, open-source, community-driven Enterprise Linux distribution built to be stable, secure, and long-lasting."
     }
   },
   "links": {
-    "join-the-discussion": "Join the Discussion",
+    "mattermost": "Join the Discussion",
     "download": "Download"
   }
 }

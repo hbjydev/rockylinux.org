@@ -21,8 +21,8 @@ import MattermostLogo from '../images/mattermost.png';
 import NaverLogo from '../images/naver.png';
 import OSLLogo from '../images/osl.png';
 import HeroImage from '../images/landing/landing-hero.jpg';
-import { Hero } from '@resf/pebble';
-import { DownloadIcon, ChatAlt2Icon, ArrowRightIcon } from '@heroicons/react/outline';
+import { Button, Hero } from '@resf/pebble';
+import { DownloadIcon, ChatAlt2Icon, ArrowRightIcon, LightningBoltIcon } from '@heroicons/react/outline';
 import LandingSegment from '../components/LandingSegment';
 
 const Index = ({ pageContext: { locale: language } }) => {
@@ -34,7 +34,14 @@ const Index = ({ pageContext: { locale: language } }) => {
       children: translate('links.download'),
       link: '/download',
       primary: true,
-      postText: '8.4'
+      postText: '8.4',
+      large: true,
+    },
+    {
+      preIcon: <ChatAlt2Icon />,
+      children: translate('links.mattermost'),
+      link: 'https://chat.rockylinux.org',
+      large: true
     }
   ];
 
@@ -44,11 +51,12 @@ const Index = ({ pageContext: { locale: language } }) => {
       <Hero
         id="rl_hero"
         headline={translate('landing.hero.headline')}
+        subheader={translate('landing.hero.subheader')}
         ctas={ctas}
         illustration={<img id="hero_img" src={HeroImage} alt="Hero image" />} />
-      <div style={{ padding: '0 32px', textAlign: 'center', height: '370px', background: '#F8F8F8', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ padding: '0 32px', textAlign: 'center', height: '370px', background: '#FFF', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
         <h1 style={{ fontSize: '32px', marginBottom: '20px', maxWidth: '740px' }}>A drop-in replacement for your workloads.</h1>
-        <p style={{ lineHeight: '1.3', marginBottom: '24px', fontSize: '20px', fontWeight: 'normal', color: '#5F5F5F', fontFamily: '"Red Hat Text", sans-serif', maxWidth: '690px' }}>
+        <p style={{ lineHeight: '1.3', marginBottom: '24px', fontSize: '20px', fontWeight: 'normal', color: '#5F5F5F', maxWidth: '690px' }}>
           Rocky Linux aims to be 100% bug-for-bug compatible with the widely-trusted and highly stable RHEL®, so you can be confident in your servers.
         </p>
         <a href="#" style={{ fontSize: '16px', fontWeight: 'bold', display: 'inline-flex', color: '#10B981' }}>
@@ -83,18 +91,18 @@ const Index = ({ pageContext: { locale: language } }) => {
         </div>
       </div>
       <div
-        className="relative bg-gray-50 dark:bg-gray-900 overflow-hidden"
+        className="relative bg-white dark:bg-gray-900 overflow-hidden"
         dir="auto"
       >
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-4 lg:px-4 lg:py-4">
+        <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-4 lg:px-4 lg:py-4" style={{ padding: '56px 0' }}>
           <div className="max-w-xl mb-6 md:mx-auto text-center lg:max-w-2xl md:mb-6">
             <h2 className="max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl md:mx-auto">
               {translate('translation:links.backed')}
             </h2>
           </div>
-          <div className="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md mb-6">
-            <div className="max-w-screen-xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-              <div className="grid grid-cols-1 gap-8 md:grid-cols-7 lg:grid-cols-7">
+          <div className="bg-white hover:shadow-lg max-w-screen-md mx-auto transform hover:-translate-y-1 transiton duration-300 mb-6 border" style={{ borderColor: '#e1e1e1' }}>
+            <div className="max-w-screen-md mx-auto py-6 px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
                 <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                   <a href="https://ctrliq.com/" aria-label="CIQ">
                     <img
@@ -222,48 +230,8 @@ const Index = ({ pageContext: { locale: language } }) => {
             </div>
           </div>
           <div className="text-center">
-            <LocalizedLink
-              to="/sponsors/"
-              className="mb-2 inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md shadow-md text-green-500 bg-white dark:bg-gray-800 hover:text-green-400 focus:outline-none focus:border-green-300 focus:shadow-outline-green active:bg-gray-50 active:text-gray-700 transition duration-150 ease-in-out"
-            >
-              <span className="-ml-2 mr-1">
-                <svg
-                  className="w-8 h-8"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </span>
-              {translate('sponsors:title')}
-            </LocalizedLink>
-            <LocalizedLink
-              to="/partners/"
-              className="ml-4 mb-2 inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md shadow-md text-green-500 bg-white dark:bg-gray-800 hover:text-green-400 focus:outline-none focus:border-green-300 focus:shadow-outline-green active:bg-gray-50 active:text-gray-700 transition duration-150 ease-in-out"
-            >
-              <span className="-ml-2 mr-1">
-                <svg
-                  className="w-8 h-8"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </span>
-              {translate('partners:title')}
-            </LocalizedLink>
+            <Button large link="/sponsors/" postIcon={<ArrowRightIcon />} primary css={{ marginRight: '24px' }}>{translate('sponsors:title')}</Button>
+            <Button large link="/partners/" postIcon={<ArrowRightIcon />} primary>{translate('partners:title')}</Button>
           </div>
         </div>
       </div>
