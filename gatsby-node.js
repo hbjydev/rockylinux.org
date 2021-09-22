@@ -96,8 +96,8 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
   await Promise.all([
-    paginate({ graphql, actions, type: 'news', itemPerPage: 3 }),
-    paginate({ graphql, actions, type: 'press', itemPerPage: 5 }),
+    paginate({ graphql, actions, type: 'news', itemPerPage: 6 }),
+    paginate({ graphql, actions, type: 'press', itemPerPage: 6 }),
   ]);
 };
 

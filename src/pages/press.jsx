@@ -47,7 +47,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { posttype: { eq: "press" } } }
-      limit: 5
+      limit: 6
       skip: $skip
     ) {
       totalCount

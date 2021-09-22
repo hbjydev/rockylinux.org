@@ -56,7 +56,6 @@ const Partners = ({ data, pageContext: { locale: language } }) => {
         <PageHeader title={translate('title')} description={translate('description')} />
         <SponsorGrid children={buildPartners(translate, 7)} />
       </main>
-      <Footer pageContext="{locale: language}" />
     </Layout>
   );
 };

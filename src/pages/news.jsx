@@ -29,7 +29,6 @@ const Index = ({ data, pageContext }) => {
         itemPerPage={pageContext.itemPerPage}
         type={pageContext.type}
       />
-      <Footer pageContext="{pageContext.language}" />
     </Layout>
   );
 };
@@ -48,7 +47,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { posttype: { eq: "news" } } }
-      limit: 3
+      limit: 6
       skip: $skip
     ) {
       totalCount
