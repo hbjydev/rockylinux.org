@@ -5,7 +5,6 @@ import Seo from '../components/seo';
 import PageHeader from '../components/page-header';
 import CardStack from '../components/card-stack';
 import Card from '../components/card';
-
 import { getGrade, partners } from '../data/supporters';
 
 const buildPartners = () =>
