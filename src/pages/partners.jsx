@@ -24,8 +24,8 @@ const Partners = () => {
   return (
     <Layout>
       <SEO title={translate('title')} />
-      <main className="bg-white text-gray-800 dark:text-white z-0">
-        <PageHeader title={translate('title')} description={translate('description')} />
+      <PageHeader title={translate('title')} description={translate('description')} />
+      <main className="px-6 bg-white text-gray-800 dark:text-white z-0">
         <SponsorGrid children={buildPartners(translate)} />
       </main>
     </Layout>
