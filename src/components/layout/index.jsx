@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <RLNavbar />
-      <div className="relative bg-white dark:bg-gray-900 overflow-hidden" id="page_content" style={{ paddingTop: '74px' }}>
+      <div className="relative bg-white overflow-hidden" id="page_content" style={{ paddingTop: '74px' }}>
         <noscript>
           <style>
             {`

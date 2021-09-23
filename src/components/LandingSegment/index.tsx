@@ -5,6 +5,7 @@ const StyledComponent = styled('div', {
     padding: '43px 86px',
     alignItems: 'center',
     width: '100%',
+    background: '#fff',
     
     '& .inner': {
         margin: '0 auto',

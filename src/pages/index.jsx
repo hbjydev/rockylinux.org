@@ -87,12 +87,12 @@ const Index = () => {
         </div>
       </div>
       <div
-        className="relative bg-white dark:bg-gray-900 overflow-hidden"
+        className="relative bg-white overflow-hidden"
         dir="auto"
       >
         <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-4 lg:px-4 lg:py-4" style={{ padding: '56px 0' }}>
           <div className="max-w-xl mb-6 md:mx-auto text-center lg:max-w-2xl md:mb-6">
-            <h2 className="max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl md:mx-auto">
+            <h2 className="max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
               {translate('translation:links.backed')}
             </h2>
           </div>

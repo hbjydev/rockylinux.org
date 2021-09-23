@@ -10,7 +10,7 @@ import OpenDrivesLogo from '../images/opendrives.png';
 import SeagateFederalLogo from '../images/seagate-federal.png';
 import FossHostLogo from '../images/fosshost.png';
 import MattermostLogo from '../images/mattermost.png';
-import NaverLogo from '../images/naver.png';
+import NaverLogo from '../images/naver-dark.png';
 import FastlyLogo from '../images/fastly.png';
 import ArmLogo from '../images/arm.png';
 import DotSlashStudioLogo from '../images/dotslash.png';
