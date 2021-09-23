@@ -14,6 +14,7 @@ const buildPartners = () =>
       description={partner.description}
       href={partner.url}
       pills={[ getGrade(partner.grade) + ' ' + Translate('supporters')('partner') ]}
+      // FIXME: Logo not working properly
       logo={partner.logo}
       key={key} />
   ));

@@ -15,6 +15,7 @@ const buildSponsors = () =>
       description={sponsor.description}
       href={sponsor.url}
       pills={[ getGrade(sponsor.grade) + ' ' + Translate('supporters')('sponsor') ]}
+      // FIXME: Logo not working properly
       logo={sponsor.logo}
       key={key} />
   ));
