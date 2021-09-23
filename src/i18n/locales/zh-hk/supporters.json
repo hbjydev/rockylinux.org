@@ -1,0 +1,11 @@
+{
+    "sponsor": "Sponsor",
+    "partner": "Partner",
+
+    "grades": [
+        "Principal/Tier 1",
+        "Tier 2",
+        "Tier 3",
+        "Tier 4"
+    ]
+}
