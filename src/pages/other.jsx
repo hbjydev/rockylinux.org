@@ -1,11 +1,9 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-
 import GenericPages from '../components/generic';
-import Header from '../components/header';
 import Footer from '../components/footer';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import NotFound from './404';
 
 const Index = ({ data }) => {
@@ -18,7 +16,7 @@ const Index = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Other" />
+      <Seo title="Other" />
       {!noPages && <GenericPages posts={posts} />}
       <Footer pageContext="{pageContext.language}" />
     </Layout>

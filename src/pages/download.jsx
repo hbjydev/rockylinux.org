@@ -1,15 +1,15 @@
 import React from 'react';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import PageHeader from '../components/page-header';
 import { Translate, Trans } from '../i18n/utils/translate';
 
-const DownloadPage = ({ pageContext }) => {
+const DownloadPage = () => {
   const translate = Translate('download');
 
   return (
     <Layout>
-      <SEO title={translate('title')} />
+      <Seo title={translate('title')} />
       <main className="bg-white dark:bg-gray-900 text-gray-800 dark:text-white z-0">
         <PageHeader title={translate('title')} description={translate('description')} />
         <div className="px-4 pb-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">

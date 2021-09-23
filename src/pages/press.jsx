@@ -1,10 +1,8 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-
-import Header from '../components/header';
 import Footer from '../components/footer';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import NotFound from '../pages/404';
 import PressLinks from '../components/press-links';
 import Pagination from '../components/pagination';
@@ -20,7 +18,7 @@ const Index = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title="Press" />
+      <Seo title="Press" />
       <PressLinks posts={posts} />
       <Pagination
         totalCount={totalCount}

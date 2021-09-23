@@ -1,5 +1,4 @@
 import React from 'react';
-import { LocalizedLink } from 'gatsby-theme-i18n';
 import { Button } from '@resf/pebble';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 

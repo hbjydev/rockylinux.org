@@ -1,16 +1,16 @@
 import React from 'react';
 import { Translate } from '../i18n/utils/translate';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
-import SponsorBlock from '../components/sponsor-block';
+import Seo from '../components/seo';
 import PageHeader from '../components/page-header';
-import SponsorGrid from '../components/sponsor-grid';
+import Card from '../components/card';
+import CardStack from '../components/card-stack';
 
 import { getGrade, sponsors } from '../data/supporters';
 
 const buildSponsors = () =>
   sponsors.map((sponsor, key) => (
-    <SponsorBlock
+    <Card
       title={sponsor.name}
       description={sponsor.description}
       href={sponsor.url}
@@ -24,10 +24,10 @@ const Sponsors = () => {
 
   return (
     <Layout>
-      <SEO title={translate('title')} />
+      <Seo title={translate('title')} />
       <PageHeader title={translate('title')} description={translate('description')} />
       <main className="px-6 bg-white dark:bg-gray-900 text-gray-800 dark:text-white z-0">
-        <SponsorGrid children={buildSponsors()} />
+        <CardStack children={buildSponsors()} />
       </main>
     </Layout>
   );

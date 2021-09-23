@@ -3,8 +3,7 @@ import { LocalizedLink } from 'gatsby-theme-i18n';
 import { Translate } from '../i18n/utils/translate';
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Header from '../components/header';
+import Seo from '../components/seo';
 import Footer from '../components/footer';
 
 const NotFoundPage = ({ data, pageContext: { locale: language } }) => {
@@ -12,7 +11,7 @@ const NotFoundPage = ({ data, pageContext: { locale: language } }) => {
 
   return (
     <Layout>
-      <SEO title="404 Not Found" />
+      <Seo title="404 Not Found" />
       <div className="max-w-4xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
         <svg
           className="text-green-500 w-full items-center justify-center icon-404"

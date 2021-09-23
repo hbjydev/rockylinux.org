@@ -2,16 +2,15 @@ import React from 'react';
 import { Translate, Trans } from '../i18n/utils/translate';
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Header from '../components/header';
+import Seo from '../components/seo';
 import Footer from '../components/footer';
 
-const Faq = ({ data, pageContext: { locale: language } }) => {
+const Faq = () => {
   const translate = Translate('faq');
 
   return (
     <Layout>
-      <SEO title={translate('title')} />
+      <Seo title={translate('title')} />
       <main className="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white z-0">
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
@@ -29,7 +28,7 @@ const Faq = ({ data, pageContext: { locale: language } }) => {
               </h5>
               <p>
                 <Trans t={translate} i18nKey="questions.0.a">
-                  <a href="https://rockylinux.org/download" />
+                  <a href="https://rockylinux.org/download">Download</a>
                 </Trans>
               </p>
               <hr />

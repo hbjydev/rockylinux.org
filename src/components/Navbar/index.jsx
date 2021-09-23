@@ -1,14 +1,7 @@
 import React from 'react';
-import { Navbar, SubNavbar } from '@resf/pebble';
-import { ChatAlt2Icon, CodeIcon, DownloadIcon } from '@heroicons/react/outline';
+import { Navbar } from '@resf/pebble';
+import { CodeIcon, DownloadIcon } from '@heroicons/react/outline';
 import { Translate } from '../../i18n/utils/translate';
-import RESFLogo from '../../images/resf-logo.svg';
-
-const resfLogo = (
-  <a href="https://resf.org">
-    <img src={RESFLogo} alt="RESF Logo" style={{ height: '24px' }} />
-  </a>
-);
 
 const rockyLogo = (
   <a href="/">
@@ -52,7 +45,7 @@ const RLNavbar = () => {
   let rockyLinks = [];
   if (typeof window !== 'undefined') {
     rockyLinks = [
-      { label: translate('links.overview'), href: '/', active: window.location.pathname == '/' },
+      { label: translate('links.overview'), href: '/', active: window.location.pathname === '/' },
       { label: translate('links.posts'), href: '/news/1/', active: window.location.pathname.startsWith('/news') },
       { label: translate('links.wiki'), href: 'https://wiki.rockylinux.org' },
       { label: translate('links.documentation'), href: 'https://docs.rockylinux.org' },

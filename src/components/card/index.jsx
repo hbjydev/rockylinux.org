@@ -21,9 +21,9 @@ const Component = styled('a', {
     }
 });
 
-const SponsorBlock = ({ href, logo, title, pills, description }) => (
+const Card = ({ href, image, title, pills, description }) => (
     <Component href={href}>
-        <img style={{ maxHeight: '117px', margin: '0 auto' }} src={logo} alt={`${title} logo`} />
+        <img style={{ maxHeight: '117px', margin: '0 auto' }} src={image} alt={`${title} logo`} />
         <h3 style={{ marginTop: '12px' }}>{title}</h3>
         <div style={{ display: 'flex', marginBottom: '12px' }}>
             {pills.map((pill, i) => (
@@ -34,4 +34,4 @@ const SponsorBlock = ({ href, logo, title, pills, description }) => (
     </Component>
 );
 
-export default SponsorBlock;
+export default Card;

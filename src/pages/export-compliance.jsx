@@ -2,14 +2,14 @@ import React from 'react';
 import { Translate } from '../i18n/utils/translate';
 import PageHeader from '../components/page-header';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
 const ExportCompliancePage = () => {
   const translate = Translate('export-compliance');
 
   return (
     <Layout>
-      <SEO title={translate('title')} />
+      <Seo title={translate('title')} />
       <main className="bg-white dark:bg-gray-900 text-gray-800 dark:text-white z-0">
         <PageHeader title={translate('title')} />
         <div style={{ maxWidth: '750px', margin: '0 auto 56px auto', width: '100%' }} className="prose">

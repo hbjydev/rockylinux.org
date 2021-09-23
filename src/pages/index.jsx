@@ -1,12 +1,8 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import { Translate } from '../i18n/utils/translate';
-
-import Footer from '../components/footer';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
-import { LocalizedLink } from 'gatsby-theme-i18n';
-
+import Seo from '../components/seo';
 import CIQLogo from '../images/ciq.png';
 import FortyFiveDrivesLogo from '../images/45drives-transparent.png';
 import AwsLogo from '../images/aws.png';
@@ -22,10 +18,10 @@ import NaverLogo from '../images/naver.png';
 import OSLLogo from '../images/osl.png';
 import HeroImage from '../images/landing/landing-hero.jpg';
 import { Button, Hero } from '@resf/pebble';
-import { DownloadIcon, ChatAlt2Icon, ArrowRightIcon, LightningBoltIcon } from '@heroicons/react/outline';
+import { DownloadIcon, ChatAlt2Icon, ArrowRightIcon } from '@heroicons/react/outline';
 import LandingSegment from '../components/LandingSegment';
 
-const Index = ({ pageContext: { locale: language } }) => {
+const Index = () => {
   const translate = Translate('index');
 
   const ctas = [
@@ -47,19 +43,19 @@ const Index = ({ pageContext: { locale: language } }) => {
 
   return (
     <Layout>
-      <SEO />
+      <Seo />
       <Hero
         id="rl_hero"
         headline={translate('landing.hero.headline')}
         subheader={translate('landing.hero.subheader')}
         ctas={ctas}
-        illustration={<img id="hero_img" src={HeroImage} alt="Hero image" />} />
+        illustration={<img id="hero_img" src={HeroImage} alt="Hero" />} />
       <div style={{ padding: '0 32px', textAlign: 'center', height: '370px', background: '#FFF', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
         <h1 style={{ fontSize: '32px', marginBottom: '20px', maxWidth: '740px' }}>A drop-in replacement for your workloads.</h1>
         <p style={{ lineHeight: '1.3', marginBottom: '24px', fontSize: '20px', fontWeight: 'normal', color: '#5F5F5F', maxWidth: '690px' }}>
           Rocky Linux aims to be 100% bug-for-bug compatible with the widely-trusted and highly stable RHEL®, so you can be confident in your servers.
         </p>
-        <a href="#" style={{ fontSize: '16px', fontWeight: 'bold', display: 'inline-flex', color: '#10B981' }}>
+        <a href="/" style={{ fontSize: '16px', fontWeight: 'bold', display: 'inline-flex', color: '#10B981' }}>
           Learn more
           <ArrowRightIcon style={{ marginLeft: '4px', height: '16px', marginTop: '3px' }} />
         </a>
