@@ -235,7 +235,13 @@ const Index = ({ pageContext: { locale: language } }) => {
           </div>
         </div>
       </div>
-      <Footer pageContext="{locale: language}" />
+      <div style={{ background: '#000', color: '#fff', padding: '90px 24px', textAlign: 'center' }}>
+        <div style={{ maxWidth: '770px', width: '100%', margin: '0 auto' }}>
+          <h1 style={{ fontSize: '36px', marginBottom: '24px' }}>Commercial support available</h1>
+          <p style={{ marginBottom: '24px', fontSize: '18px', color: 'rgba(255, 255, 255, 0.6)' }}>Understandably, some users may require more support than just forums and chat rooms. Luckily for them, Rocky Linux is partnered with a number of commercial support providers who’ve got your back.</p>
+          <Button large link="#" postIcon={<ArrowRightIcon />} primary>Support partners</Button>
+        </div>
+      </div>
     </Layout>
   );
 };
